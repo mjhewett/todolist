@@ -1,0 +1,69 @@
+
+body{
+	font-family: "Annie Use Your Telescope", cursive;
+	background-color: #BBF1B7;
+}
+
+
+h1{
+text-align: center;
+ margin-top: 50px;
+ font-size: 70px;
+}
+
+form{
+  margin-left: 545px;
+  margin-top: 75px;
+}
+
+.addTask{
+	background-color: #62D2E7;
+	border-radius: 7px;
+	padding: 10px;
+	border: 2px solid #62D2E7;
+}
+
+
+.addTask:focus{
+	outline: 2px solid #ECD8F1;
+}
+
+
+.removeTask{
+	
+	background-color: #62D2E7;
+	border-radius: 7px;
+	padding: 10px;
+	border: 2px solid #62D2E7;
+	float: right;
+	margin-right: 495px;
+    margin-top: -47px;
+}
+
+.removeTask:focus{
+	outline: 2px solid #ECD8F1;
+}
+
+.tasks{
+margin-left: 420px;
+font-size: 30px;
+}
+
+
+input{
+	border-radius: 7px;
+	decoration: none;
+	border: 2px solid #62D2E7;
+	border-style: dashed;
+	padding: 10px;
+
+}
+
+input:focus{
+	outline: none;
+}
+
+
+.done{
+	text-decoration: line-through;
+}
