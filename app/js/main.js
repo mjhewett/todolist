@@ -1,11 +1,15 @@
 
 // (function(){
 
+
+// Todo Constructor
+
 var Todo = function(options){
 
  var option = options || {};
 	this.task = option.task;
 	this.status = 'Open';
+
 };
 
 
@@ -13,10 +17,13 @@ var Todo = function(options){
 var taskBin = [];
 
 
-
+	
 // *************************
 // getting stuff on the page
 // *************************
+
+
+
 
 
 $('#fudge').on('submit', function(event){
@@ -54,6 +61,8 @@ $('#tasks').on('click', 'li', function(event){
 // **********************
 
 
+
+
 $('#tasks').on('click', '.done', function(event){
 
 
@@ -71,6 +80,11 @@ $('#tasks').on('click', '.done', function(event){
 // removing an <li>
 // ****************
 
+
+$.fn.pushItRealGood = function (x) {
+
+$('#tasks').append('<li>' + x.task + '</li>');
+};
 
 $('#removeTask').on('click', function(event){
 
@@ -91,29 +105,18 @@ $('#removeTask').on('click', function(event){
 
 	taskBin.forEach( function(x){
 
-		$('#tasks').append('<li>' + x.task + '</li>');
+	
+
+	$(this).pushItRealGood(x);
+
+	
+
+	
 	});
 
 }); 
 
 
-
-
-
-
-	
-
-
-
-
-
-// delegated events jquery
-
-// when i click on a todo, i want that todo to be classed "done"
-
-
-
-// }());
 
 
 
