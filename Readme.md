@@ -1,6 +1,8 @@
-## Welcome to My Repo
+## This is a to do list.
 
-> I am your Readme.md file, you should probably update me.
+> The purpose of this project is to learn how to create a basic CRUD application.
+
+> Deployed Site: http://development.max-assignment15-todo-tiy.divshot.io/
 
 
 ## Usage
